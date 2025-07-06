@@ -13,6 +13,7 @@ from plotly.subplots import make_subplots
 import json
 from io import StringIO
 import time
+import os
 
 # Configure Streamlit page
 st.set_page_config(
@@ -23,7 +24,7 @@ st.set_page_config(
 )
 
 # API Configuration
-API_BASE_URL = "http://127.0.0.1:8000/api"
+API_BASE_URL = os.getenv('API_BASE_URL', 'http://127.0.0.1:8000/api')
 
 # Custom CSS for better styling
 st.markdown("""
