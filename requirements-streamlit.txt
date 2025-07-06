@@ -1,3 +1,6 @@
+# Streamlit Cloud Requirements (Frontend Only)
+# Use this file for deploying only the Streamlit frontend to Streamlit Cloud
+
 # Core Streamlit and data processing
 streamlit>=1.28.1
 pandas>=2.1.0
@@ -11,12 +14,6 @@ plotly>=5.17.0
 
 # HTTP requests and API communication
 requests>=2.31.0
-
-# Django backend (for full-stack deployment - optional for Streamlit-only deployment)
-Django>=4.2.0
-djangorestframework>=3.14.0
-django-cors-headers>=4.3.0
-python-multipart>=0.0.6
 
 # Streamlit Cloud compatibility
 altair<5
